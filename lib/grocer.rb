@@ -29,7 +29,6 @@ def consolidate_cart(cart)
     while new_cart_counter < new_cart.length do
       found = false
       if cart[cart_counter][:item] == new_cart[new_cart_counter][:item]
-        puts cart_counter
         new_cart[new_cart_counter][:count] += 1
         found = true
       end
